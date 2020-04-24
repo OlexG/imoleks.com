@@ -1,58 +1,111 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&family=Poppins:wght@500&family=Sarabun:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>imoleks</title>
-    <script src="https://cdn.babylonjs.com/babylon.max.js"></script>
-    <link rel = "stylesheet" type = "text/css" href = "style.css" />
-    <style>
-      #canvas{
-        width: 100%;
-        height: 60%;
-      }
-    </style>
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-item"><canvas class = "item1" id="canvas" width="800" height="1000"> Your browser is not HTML5 </canvas></div>
-      <div id = "border"><div class = "back">
-        <h1 class = "title">I am Oleks</h1>
-        <div class = "descdiv">
-          <h1 class = "description">I like to make things. This website is dedicated to organizing all the things I make and displaying them. Currently I am studying in highschool</h1>
-          <div class = "emoji">
-              <h1 class="emojitext">💡</h1>
+    <div id = "header">
+      <div class ="headerContent">
+        <a href = "https://github.com/OlexG" target="_blank"><p class = "headerButton">Github</p></a>
+        <a href = "#Projects"><p class = "headerButton">Projects</p></a>
+      </div>
+    </div>
+    <div id = "aboutSection">
+      <h1 id = "title">Oleksandr Gorpynich</h1>
+      <p id = "description">Hey everyone! I am a developer currently studying in high school. This website is dedicated to organizing all the things I make and displaying them</p>
+    </div>
+    <div id = "skills">
+      <h1 class = "skillsTitleText">Skills</h1>
+      <div id = "imagesSkills">
+        <a href="https://www.cplusplus.com/" target="_blank"><img class = "skillsImage" src = "images/c++.png"/></a>
+        <a href="https://www.python.org/" target="_blank"><img class = "skillsImage" src = "images/python.png"/></a>
+        <a href="https://nodejs.org/en/" target="_blank"><img class = "skillsImage" src = "images/node.png"/></a>
+        <a href="https://vuejs.org/" target="_blank"><img class = "skillsImage" src = "images/vue.png"/></a>
+        <a href="https://www.javascript.com/" target="_blank"><img class = "skillsImage" src = "images/javascript.png"/></a>
+        <a href="https://www.w3.org/html/" target="_blank"><img class = "skillsImage" src = "images/html.png"/></a>
+        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><img class = "skillsImage" src = "images/css.png"/></a>
+      </div>
+    </div>
+    <div id = "Projects">
+      <div class = "project">
+        <img class = "projectImg" src = "images/geomslogo.png">
+        <div class = "projectDescritption">
+          <p>Geoms.io is an io game that was made in collaboration with <a href = "http://linolevan.com/" target="_blank">Lino</a><p>
+          <div class = "checkOutButtons">
+            <!--<a><p class = "basicLink">Code</p></a>-->
+            <a href = "http://geoms.io/" target="_blank"><p class = "basicLink">Live Version</p></a>
           </div>
         </div>
-      </div></div>
-    </div>
-
-
-
-  <div class="row">
-    <div class="column">
-      <div class="example">
-      <a target="_blank" href= "https://play.google.com/store/apps/details?id=com.Oleks.SpeedyBall">
-      <div class = "imageandtext">
-      <img class = "project1" src="images/speedyball.jpg">
-        </a>
-        <h1 class = "projectdesc">SpeedyBall is my first "real" and completed project. Its an android game where the aim is to survive while collecting coins on your way down<h1>
+        <div class = "toolsUsed">
+          <p>Tools used</p>
+          <ul>
+            <li>Node JS</li>
+            <li>Socket.io</li>
+            <li>HTML5 Canvas</li>
+          </ul>
+        </div>
+      </div>
+      <div class = "project">
+        <img class = "projectImg" src = "images/elemental.png">
+        <div class = "projectDescritption">
+          <p>Elemental is a game that was made in collaboration with <a href = "http://linolevan.com/" target="_blank">Lino</a>. It is a remake of the popular Elemental game made that was sadly shut down. Currently, Elemental has over 3000 user made elements!<p>
+          <div class = "checkOutButtons">
+            <!--<a><p class = "basicLink">Code</p></a>-->
+            <a href = "http://elemental.imoleks.com/" target="_blank"><p class = "basicLink">Live Version</p></a>
+          </div>
+        </div>
+        <div class = "toolsUsed">
+          <p>Tools used</p>
+          <ul>
+            <li>Node JS</li>
+            <li>Socket.io</li>
+            <li>Vue JS</li>
+          </ul>
+        </div>
+      </div>
+      <div class = "project">
+        <img class = "projectImg" src = "images/memender.png">
+        <div class = "projectDescritption">
+          <p>Memender is a small project that used the Cloudinary database to allow users to upload and look at images. Users can also rate these images by swiping left or right.<p>
+          <div class = "checkOutButtons">
+            <a href = "https://github.com/OlexG/memender" target="_blank"><p class = "basicLink">Code</p></a>
+            <a href = "http://memender.imoleks.com/" target="_blank"><p class = "basicLink">Live Version</p></a>
+          </div>
+        </div>
+        <div class = "toolsUsed">
+          <p>Tools used</p>
+          <ul>
+            <li>Node JS</li>
+            <li>Socket.io</li>
+            <li>Cloudinary</li>
+          </ul>
+        </div>
+      </div>
+      <div class = "project">
+        <img class = "projectImg" src = "images/speedyball.jpg">
+        <div class = "projectDescritption">
+          <p>Speedy Ball is a fast paced 3D endless game developed for the Android app store using Unity.<p>
+          <div class = "checkOutButtons">
+            <!--<a href = "https://github.com/OlexG/memender" target="_blank"><p class = "basicLink">Code</p></a>-->
+            <a href = "https://play.google.com/store/apps/details?id=com.Oleks.SpeedyBall" target="_blank"><p class = "basicLink">Live Version</p></a>
+          </div>
+        </div>
+        <div class = "toolsUsed">
+          <p>Tools used</p>
+          <ul>
+            <li>Unity 3D</li>
+            <li>C#</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="column">
-      <div class="example">
-      <a target="_blank" href= "http://imoleks.com/project1">
-      <div class = "imageandtext">
-      <img class = "project1" src="images/pixelwars.png">
-        </a>
-        <h1 class = "projectdesc">Pixel wars is an experimental app that I made using node js and socket. Basically it is a drawing game where you draw and then rate the drawings of others. It requires at least 3 people to be played properly<h1>
-        </div>
-      </div>
-    </div>
-
-  </div>
-    <script src = "particles.min.js"></script>
-    <script src = "app.js"></script>
+    <footer>
+      <script> </script>
+    </footer>
   </body>
 </html>
